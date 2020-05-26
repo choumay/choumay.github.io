@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://choumay.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-05-26T13:00:42.212Z</updated>
+    <title>乔马</title>
+    <updated>2020-05-26T13:04:29.453Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://choumay.github.io"/>
     <link rel="self" href="https://choumay.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>“B-612”星球</subtitle>
     <logo>https://choumay.github.io/images/avatar.png</logo>
     <icon>https://choumay.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, 乔马</rights>
     <entry>
         <title type="html"><![CDATA[我的百天读书之旅，骗了自己，醉了别人，依然愉悦]]></title>
         <id>https://choumay.github.io/post/wo-de-bai-tian-du-shu-zhi-lu-pian-liao-zi-ji-zui-liao-bie-ren-yi-ran-yu-yue/</id>
