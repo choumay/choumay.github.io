@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://choumay.github.io</id>
     <title>乔马</title>
-    <updated>2020-06-27T02:41:08.282Z</updated>
+    <updated>2020-06-27T08:37:31.440Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://choumay.github.io"/>
     <link rel="self" href="https://choumay.github.io/atom.xml"/>
@@ -11,7 +11,28 @@
     <icon>https://choumay.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 乔马</rights>
     <entry>
-        <title type="html"><![CDATA[【6.19练习】Excel的VLOOKUP、IF的用法]]></title>
+        <title type="html"><![CDATA[【6.27excel练习】常用函数笔记]]></title>
+        <id>https://choumay.github.io/post/627excel-lian-xi-chang-yong-han-shu-bi-ji/</id>
+        <link href="https://choumay.github.io/post/627excel-lian-xi-chang-yong-han-shu-bi-ji/">
+        </link>
+        <updated>2020-06-27T07:54:01.000Z</updated>
+        <content type="html"><![CDATA[<p>LENB：数字，=LENB()，字符串！！<br>
+LEN：  数字，=LEN()，字符！！<br>
+right:   字，=RIGHT(单元格，从右边算起要多少个字符）<br>
+RIGHTB: 字，=RIGHTB(单元格，从右边算起要多少个字符串）注意：汉字的话，双数才显示字数。<br>
+LEFT:   字，=LEFT(单元格，从左边算起要多少个字符）<br>
+LEFTB: 字，=LEFTB(单元格，从右边算起要多少个字符串）注意：汉字的话，双数才显示字数。<br>
+FIND：数字，=FIND(“要找的字”，单元格，从第几个字符开始查找)   注意：“从第几个字符开始查找”，可不写，默认是从1开始找。但是，我写其他数字，也不会改变要找的那个字的位置。<br>
+MID：字，=MID(单元格，从第几个字开始找，要找多少个字出来)<br>
+substitute： =SUBSTITUTE(单元格，要被替换的位置/要被替换的字，新的字)   操作失误：不知道，可能符号错误，所以，操作失误建议删除重新操作。“要被替换的位置/要被替换的字”的意思是，=RIGHT(单元格，从右边算起要多少个字符）/ &quot;XX&quot;都可以。<br>
+SUMIFS: =SUMIFS(要计和的数量列，条件列1，条件值1，条件列2，条件值2)  注意：不要和countifs的用法混淆<br>
+SUMIF: =SUMIF(条件列，条件值，要计和的数量列)  注意：和SUMIFS的顺序是不同的。SUMIFS由于很多条件，所以，合计值列要放在最前面，后面才把条件一一列出。<br>
+countif: =COUNTIF(条件列，条件值）     注意：这个是计数，SUMIF是计和！！！<br>
+COUNTIFS: =COUNTIFS(条件列1，条价值1，条件列2，条件值2)</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【6.19EXCEL练习】Excel的VLOOKUP、IF的用法]]></title>
         <id>https://choumay.github.io/post/619-lian-xi-excel-de-vlookupif-de-yong-fa/</id>
         <link href="https://choumay.github.io/post/619-lian-xi-excel-de-vlookupif-de-yong-fa/">
         </link>
@@ -26,6 +47,8 @@ col_index_num：是值的列！但是要用第几列表示，“几”是数字�
 【rangez_lookup】：是匹配方式，精确是“0”，近似是“1”。网上有人说可以不用写，就是表示精确的意思。但是，实际上，我不写“0”，竟然出现错误！！所以还是乖乖的写上吧！<br>
 “1”的用法还没有想到。<br>
 例子：=VLOOKUP(X3,$A<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mo>:</mo></mrow><annotation encoding="application/x-tex">2:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>U$7045,21,0)</p>
+<p>【6.27】补充：<br>
+注意跨表格的情况，一定要函数里面的描述，否则极其容易出错，出现计算不了的情况。</p>
 <p>IF函数：<br>
 犯了一个错误：英文下的符号，不能用中文符号。<br>
 =IF(F3&lt;=20,&quot;A&quot;,IF((F3&gt;20)<em>(F3&lt;=40),&quot;B&quot;,IF(F3&gt;40,&quot;C&quot;)))<br>

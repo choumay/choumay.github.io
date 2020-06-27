@@ -2,11 +2,11 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>【6.19练习】Excel的VLOOKUP、IF的用法 | 乔马</title>
-<link rel="shortcut icon" href="https://choumay.github.io/favicon.ico?v=1593225636700">
+<title>【6.19EXCEL练习】Excel的VLOOKUP、IF的用法 | 乔马</title>
+<link rel="shortcut icon" href="https://choumay.github.io/favicon.ico?v=1593247047082">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://choumay.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="【6.19练习】Excel的VLOOKUP、IF的用法 | 乔马 - Atom Feed" href="https://choumay.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="【6.19EXCEL练习】Excel的VLOOKUP、IF的用法 | 乔马 - Atom Feed" href="https://choumay.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
@@ -24,7 +24,7 @@ table_arra..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://choumay.github.io">
-  <img class="avatar" src="https://choumay.github.io/images/avatar.png?v=1593225636700" alt="">
+  <img class="avatar" src="https://choumay.github.io/images/avatar.png?v=1593247047082" alt="">
   </a>
   <h1 class="site-title">
     乔马
@@ -77,7 +77,7 @@ table_arra..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              【6.19练习】Excel的VLOOKUP、IF的用法
+              【6.19EXCEL练习】Excel的VLOOKUP、IF的用法
             </h2>
             <div class="post-info">
               <span>
@@ -101,6 +101,8 @@ col_index_num：是值的列！但是要用第几列表示，“几”是数字�
 【rangez_lookup】：是匹配方式，精确是“0”，近似是“1”。网上有人说可以不用写，就是表示精确的意思。但是，实际上，我不写“0”，竟然出现错误！！所以还是乖乖的写上吧！<br>
 “1”的用法还没有想到。<br>
 例子：=VLOOKUP(X3,$A<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mo>:</mo></mrow><annotation encoding="application/x-tex">2:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>U$7045,21,0)</p>
+<p>【6.27】补充：<br>
+注意跨表格的情况，一定要函数里面的描述，否则极其容易出错，出现计算不了的情况。</p>
 <p>IF函数：<br>
 犯了一个错误：英文下的符号，不能用中文符号。<br>
 =IF(F3&lt;=20,&quot;A&quot;,IF((F3&gt;20)<em>(F3&lt;=40),&quot;B&quot;,IF(F3&gt;40,&quot;C&quot;)))<br>
