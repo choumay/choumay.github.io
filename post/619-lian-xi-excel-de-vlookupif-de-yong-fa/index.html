@@ -2,23 +2,19 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>关于 | 乔马</title>
+<title>【6.19练习】Excel的VLOOKUP、IF的用法 | 乔马</title>
 <link rel="shortcut icon" href="https://choumay.github.io/favicon.ico?v=1593225636700">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://choumay.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="关于 | 乔马 - Atom Feed" href="https://choumay.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="【6.19练习】Excel的VLOOKUP、IF的用法 | 乔马 - Atom Feed" href="https://choumay.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
-
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
+    <meta name="description" content="所有的编程语言，估计都不能用中文下的符号。
+VLOOKUP(lookup_value,table_array,col_index_num,[range_looup])
+lookup_value：就是想找的指标，俗称X。
+table_arra..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -81,46 +77,55 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              关于
+              【6.19练习】Excel的VLOOKUP、IF的用法
             </h2>
             <div class="post-info">
               <span>
-                2019-01-25
+                2020-06-20
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+                <p>所有的编程语言，估计都不能用中文下的符号。<br>
+VLOOKUP(lookup_value,table_array,col_index_num,[range_looup])<br>
+lookup_value：就是想找的指标，俗称X。<br>
+table_array:包括指标和值的区间，就是想找的东西的整个范围，不是X的列。<br>
+1）注意犯错的部分：定了X的列，是错的！错的！错的！一定要包括Y值！！！<br>
+2）一定要加绝对值，否则是没办法批量处理。<br>
+col_index_num：是值的列！但是要用第几列表示，“几”是数字。试过了直接抓取，是不行的，还是要乖乖地数数！！<br>
+【rangez_lookup】：是匹配方式，精确是“0”，近似是“1”。网上有人说可以不用写，就是表示精确的意思。但是，实际上，我不写“0”，竟然出现错误！！所以还是乖乖的写上吧！<br>
+“1”的用法还没有想到。<br>
+例子：=VLOOKUP(X3,$A<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mo>:</mo></mrow><annotation encoding="application/x-tex">2:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>U$7045,21,0)</p>
+<p>IF函数：<br>
+犯了一个错误：英文下的符号，不能用中文符号。<br>
+=IF(F3&lt;=20,&quot;A&quot;,IF((F3&gt;20)<em>(F3&lt;=40),&quot;B&quot;,IF(F3&gt;40,&quot;C&quot;)))<br>
+1、注意：所有符号不能是中文下的输入。<br>
+2、除了数字，凡是字符型，都要加上双引号（”“）！单引号都不行！！！<br>
+3、在多个IF的作用下，右括号只能在最后才能全加上！<br>
+4、重要！！！合并的符号，只能用</em>。之前试过，20&lt;F3&lt;=40，错误！！！F3&gt;20 and F3&lt;=40，错误！</p>
 
               </div>
               <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
-</ul>
-</li>
-</ul>
-
+                
               </div>
             </div>
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://choumay.github.io/post/wo-de-bai-tian-du-shu-zhi-lu-pian-liao-zi-ji-zui-liao-bie-ren-yi-ran-yu-yue/">
+              <h3 class="post-title">
+                我的百天读书之旅，骗了自己，醉了别人，依然愉悦
+              </h3>
+            </a>
+          </div>
         
 
         

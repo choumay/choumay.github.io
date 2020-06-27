@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://choumay.github.io</id>
     <title>乔马</title>
-    <updated>2020-05-26T13:08:15.952Z</updated>
+    <updated>2020-06-27T02:40:53.081Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://choumay.github.io"/>
     <link rel="self" href="https://choumay.github.io/atom.xml"/>
@@ -10,6 +10,31 @@
     <logo>https://choumay.github.io/images/avatar.png</logo>
     <icon>https://choumay.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 乔马</rights>
+    <entry>
+        <title type="html"><![CDATA[【6.19练习】Excel的VLOOKUP、IF的用法]]></title>
+        <id>https://choumay.github.io/post/619-lian-xi-excel-de-vlookupif-de-yong-fa/</id>
+        <link href="https://choumay.github.io/post/619-lian-xi-excel-de-vlookupif-de-yong-fa/">
+        </link>
+        <updated>2020-06-20T02:49:19.000Z</updated>
+        <content type="html"><![CDATA[<p>所有的编程语言，估计都不能用中文下的符号。<br>
+VLOOKUP(lookup_value,table_array,col_index_num,[range_looup])<br>
+lookup_value：就是想找的指标，俗称X。<br>
+table_array:包括指标和值的区间，就是想找的东西的整个范围，不是X的列。<br>
+1）注意犯错的部分：定了X的列，是错的！错的！错的！一定要包括Y值！！！<br>
+2）一定要加绝对值，否则是没办法批量处理。<br>
+col_index_num：是值的列！但是要用第几列表示，“几”是数字。试过了直接抓取，是不行的，还是要乖乖地数数！！<br>
+【rangez_lookup】：是匹配方式，精确是“0”，近似是“1”。网上有人说可以不用写，就是表示精确的意思。但是，实际上，我不写“0”，竟然出现错误！！所以还是乖乖的写上吧！<br>
+“1”的用法还没有想到。<br>
+例子：=VLOOKUP(X3,$A<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mo>:</mo></mrow><annotation encoding="application/x-tex">2:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>U$7045,21,0)</p>
+<p>IF函数：<br>
+犯了一个错误：英文下的符号，不能用中文符号。<br>
+=IF(F3&lt;=20,&quot;A&quot;,IF((F3&gt;20)<em>(F3&lt;=40),&quot;B&quot;,IF(F3&gt;40,&quot;C&quot;)))<br>
+1、注意：所有符号不能是中文下的输入。<br>
+2、除了数字，凡是字符型，都要加上双引号（”“）！单引号都不行！！！<br>
+3、在多个IF的作用下，右括号只能在最后才能全加上！<br>
+4、重要！！！合并的符号，只能用</em>。之前试过，20&lt;F3&lt;=40，错误！！！F3&gt;20 and F3&lt;=40，错误！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[我的百天读书之旅，骗了自己，醉了别人，依然愉悦]]></title>
         <id>https://choumay.github.io/post/wo-de-bai-tian-du-shu-zhi-lu-pian-liao-zi-ji-zui-liao-bie-ren-yi-ran-yu-yue/</id>
